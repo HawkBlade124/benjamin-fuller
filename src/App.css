@@ -1,15 +1,123 @@
 body{
   background: #141b22 !important;
+  min-height:100vh;
 }
+
+a{
+  text-decoration: none;
+}
+
 header{
   background-color:#0058a0;
   color:#fff;
 }
 
+nav {
+  margin-right:30px;
+}
 #navigation{
   list-style-type:none;
+  margin-bottom:0;
+  padding-left:0;
+}
+
+#navigation li{
+  margin-right:20px;
+}
+
+#navigation li a{
+  font-size:19px;
+  text-decoration: none;
+  color:#fff;  
+}
+
+#navigation li a:hover{
+  color:#c4e0ff;  
+}
+
+#rightHeader .icons{
+  margin-right:20px;
+  font-size:19px;
+  color:#fff;
+}
+#leftHeader{
+  padding:20px;  
+}
+
+#leftHeader img{
+  width:100%;
+  max-width:150px;  
 }
 
 h1, h2, h3, h4, h5, h6, p{
+  color:#fff;
+  text-transform: uppercase;
+}
+
+#homePageh1{
+  font-size:69px;
+}
+
+#homePageh2{
+  font-size:45px;  
+}
+
+#homePageh3{
+  text-align: center;  
+}
+
+.homeButton{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+  max-width:180px;
+  text-align: center;
+  padding:15px;
+  color:#0885ec;
+  border:1px solid #0885ec;
+  cursor:pointer;
+  transition:0.2s ease-in;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.homeButton:hover{
+  background-color:#0058a0;
+  color:#fff;
+  transition:0.2s ease-in
+}
+.homeButton svg{
+  margin-left:5px;
+}
+
+.paragraphText{
+  text-transform: none;
+}
+#containerHeight{
+
+  box-sizing: border-box;
+}
+
+.homeSection{
+  height:100vh;
+  margin-bottom:25px;
+}
+
+.portfolioImg{
+  width:100%;
+  max-width:350px;
+}
+footer{
+  background:#0058a0;
+  padding:25px 0;
+}
+
+footer a{
+  color:#fff;
+  margin-left:15px;
+}
+#copyright{
+  margin-left:12px;
   color:#fff;
 }

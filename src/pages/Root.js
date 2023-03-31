@@ -4,7 +4,7 @@ import Footer from '../pages/navigation/Footer'
 function RootLayout(){
     return  <>    
         <Header />
-        <div className='container'>
+        <div id="containerHeight" className='container'>
             <Outlet />
         </div>
         <Footer />
