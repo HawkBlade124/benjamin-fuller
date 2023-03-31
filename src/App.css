@@ -1,6 +1,7 @@
 body{
   background: #141b22 !important;
-  min-height:100vh;
+  height:100%;
+  color:#fff
 }
 
 a{
@@ -14,6 +15,7 @@ header{
 
 nav {
   margin-right:30px;
+  width:100%;
 }
 #navigation{
   list-style-type:none;
@@ -40,6 +42,11 @@ nav {
   font-size:19px;
   color:#fff;
 }
+
+#rightHeader{
+  width:100%;
+  max-width:500px;
+}
 #leftHeader{
   padding:20px;  
 }
@@ -56,10 +63,14 @@ h1, h2, h3, h4, h5, h6, p{
 
 #homePageh1{
   font-size:69px;
+  margin-top:25px;
+  text-align: center;
 }
 
 #homePageh2{
-  font-size:45px;  
+  font-size:45px; 
+  margin-bottom:25px;
+  text-align: center; 
 }
 
 #homePageh3{
@@ -80,6 +91,7 @@ h1, h2, h3, h4, h5, h6, p{
   transition:0.2s ease-in;
   text-decoration: none;
   text-transform: capitalize;
+  margin:0 15px
 }
 
 .homeButton:hover{
@@ -91,22 +103,52 @@ h1, h2, h3, h4, h5, h6, p{
   margin-left:5px;
 }
 
+.homeSection{
+  padding-bottom:35px;
+  margin-bottom:125px;
+  line-height: 2;
+  border-bottom:2px dotted #fff;
+}
+
+#mainParagraph{
+  width:100%;
+  max-width:655px;
+  line-height:2;
+  margin:5% 0;
+text-align: center;
+}
 .paragraphText{
   text-transform: none;
+  text-align: center;
+  margin:15px 0;
+}
+
+.paragraphText ul{
+  list-style-type: none;
+  padding-left:0;
 }
 #containerHeight{
-
   box-sizing: border-box;
 }
 
-.homeSection{
-  height:100vh;
-  margin-bottom:25px;
+#skillCols{
+  margin-top:65px;
 }
 
+
+
+#lastSection{
+  margin-bottom:10px;
+  border:none;
+}
 .portfolioImg{
   width:100%;
-  max-width:350px;
+  max-width:350px;  
+}
+#mainPicture{
+  max-width:200px;
+  border-radius: 180px;
+  margin:0 auto;
 }
 footer{
   background:#0058a0;
@@ -116,8 +158,39 @@ footer{
 footer a{
   color:#fff;
   margin-left:15px;
+
 }
 #copyright{
   margin-left:12px;
   color:#fff;
+}
+
+#backToTopButton{
+  position: fixed;
+  right:10px;
+  bottom:10px;
+  color:#000;
+  background:#c4e0ff;
+  padding:10px;
+  font-size:15px;
+  border-radius:50% 0;
+  z-index:999;
+}
+#workButton.homeButton{
+  max-width: 205px;
+}
+#skillsButton{
+  width:450px;
+}
+
+#buttonSet{
+  display:flex;
+  flex-direction:row;
+  justify-content: space-between;
+  max-width:650px;
+}
+
+/* Projects Section */
+#projectsText{
+  text-align: left;  
 }

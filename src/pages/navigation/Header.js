@@ -9,15 +9,15 @@ const Header = () => {
         <>
         <header className="d-flex flex-row justify-content-between align-items-center w-100">
             <div id="leftHeader" className="col-4">
-                <img src={logo} />
+                <Link to="/"> <img src={logo} /></Link>
             </div>
             <div id='rightHeader' className="d-flex flex-row justify-content-center align-items-center col-4">
             <nav className='d-flex flex-row align-items-center'>
                 <ul id="navigation" className="d-flex flex-row justify-content-between align-items-center col-4 w-100">
                     <li><Link to="/">Home</Link></li>
-                    <li><Link to="/about">About Me</Link></li>
                     <li><Link to="/projects">Projects</Link></li>
-                    <li><Link to="/Resume">Resume</Link></li>
+                    <li><Link to="/Resume">Experience</Link></li>
+                    <li><Link to="/Contact">Contact</Link></li>
                 </ul>
             </nav>
             <a className="icons" href="mailto:benjaminirafuller@gmail.com" target="_blank"><FontAwesomeIcon icon={faEnvelope} /></a>
