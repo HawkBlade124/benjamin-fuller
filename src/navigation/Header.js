@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedinIn }  from '@fortawesome/free-brands-svg-icons';
-import logo from './benjamin-fuller-logo-horizontal.png';
+import logo from '../images/benjamin-fuller-logo-horizontal.png';
 
 const Header = () => {
     return(
@@ -15,7 +15,7 @@ const Header = () => {
             <nav className='d-flex flex-row align-items-center'>
                 <ul id="navigation" className="d-flex flex-row justify-content-between align-items-center col-4 w-100">
                     <li><Link to="/">Home</Link></li>
-                    <li><Link to="/projects">Projects</Link></li>
+                    <li><Link to="/Projects">Projects</Link></li>
                     <li><Link to="/Resume">Experience</Link></li>
                     <li><Link to="/Contact">Contact</Link></li>
                 </ul>

@@ -8,6 +8,7 @@ import lindco  from "../images/lindco.jpg";
 import geisler  from "../images/geislerco.jpg";
 import edmonton  from "../images/edmonton.jpg";
 import me from "../images/me.webp";
+
 const Home = () => {
     return <>
         <section className='homeSection d-flex flex-column align-items-center'>

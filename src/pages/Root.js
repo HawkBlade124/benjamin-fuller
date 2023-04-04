@@ -1,6 +1,6 @@
 import { Outlet } from 'react-router-dom';
-import Header from '../pages/navigation/Header';
-import Footer from '../pages/navigation/Footer'
+import Header from '../navigation/Header';
+import Footer from '../navigation/Footer'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
 function RootLayout(){

@@ -33,6 +33,15 @@ nav {
   color:#fff;  
 }
 
+#navigation li a:active{
+  color:#f58aff;
+  text-decoration: underline;
+}
+#navigation li a:active{
+  color:#f58aff;
+  text-decoration: underline;
+}
+
 #navigation li a:hover{
   color:#c4e0ff;  
 }
@@ -193,4 +202,41 @@ footer a{
 /* Projects Section */
 #projectsText{
   text-align: left;  
+}
+
+
+.projects {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.projectCol{
+  position: relative;
+}
+
+.projectImgCaption{
+  position: absolute;
+  top:0%;
+  width:100%;  
+  text-align: center;
+  background:rgb(0,0,0,0.5);
+  font-size:21px;
+  font-weight:bold;
+  color:#fff;
+  text-transform: uppercase;
+  padding-top:65px;
+  padding-bottom:96px;
+    transition:0.2s ease-in
+}
+.projectImgCaption:hover{
+  background:rgb(0,0,0,0.2);
+  transition:0.2s ease-in
+}
+.projectImg{
+  max-width:400px;
+  margin-bottom:35px;
+}
+.individualProjectIMG img{
+  margin-bottom:25px
 }
