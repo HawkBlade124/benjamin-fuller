@@ -144,8 +144,6 @@ text-align: center;
   margin-top:65px;
 }
 
-
-
 #lastSection{
   margin-bottom:10px;
   border:none;
@@ -204,6 +202,9 @@ footer a{
   text-align: left;  
 }
 
+.portfolioText{
+  text-align: left;
+}
 
 .projects {
   display:flex;
@@ -227,7 +228,7 @@ footer a{
   text-transform: uppercase;
   padding-top:65px;
   padding-bottom:96px;
-    transition:0.2s ease-in
+  transition:0.2s ease-in
 }
 .projectImgCaption:hover{
   background:rgb(0,0,0,0.2);
@@ -237,6 +238,29 @@ footer a{
   max-width:400px;
   margin-bottom:35px;
 }
+
+.individualProjectIMG{
+  margin-left:32px;
+}
 .individualProjectIMG img{
-  margin-bottom:25px
+  margin-bottom:25px;
+  max-width:700px;
+}
+#tags{
+  margin:30px 0;
+}
+.tagButtons{
+  margin:0 15px;
+}
+.firstBtn{
+  margin-left:0;
+}
+#tagText{
+  color:#fff;
+  font-size:19px;
+  margin-bottom:10px
+}
+.goBackBtn{
+  margin-right:10px;
+  margin-bottom:15px;
 }
