@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 body{
   background: #141b22 !important;
   height:100%;
-  color:#fff
+  color:#fff;
+  font-family:"Roboto";
 }
 
 a{
@@ -9,7 +12,7 @@ a{
 }
 
 header{
-  background-color:#0058a0;
+  background-color:#1879c8;
   color:#fff;
 }
 
@@ -79,7 +82,8 @@ h1, h2, h3, h4, h5, h6, p{
 #homePageh2{
   font-size:45px; 
   margin-bottom:25px;
-  text-align: center; 
+  text-align: center;
+  font-weight:300 
 }
 
 #homePageh3{
@@ -150,7 +154,30 @@ text-align: center;
 }
 .portfolioImg{
   width:100%;
-  max-width:350px;  
+  max-width:400px;  
+  margin:0 10px;
+}
+.portfolioLink{
+  position: relative;
+}
+.portfolioLink .imageCaption{
+  position:absolute;
+  top:0;
+  text-align: center;
+  width:calc(100% - 9px);
+  background:rgb(0,0,0,0.5);
+  height:100%;
+  padding-top:65px;
+  transition:0.3s ease-in
+}
+
+.imageCaption:hover{
+  background:rgb(0,0,0,0.2);
+  transition:0.3s ease-in
+}
+.imageCaption{
+  text-align: center;
+  font-size:18px;
 }
 #mainPicture{
   max-width:200px;
@@ -158,7 +185,7 @@ text-align: center;
   margin:0 auto;
 }
 footer{
-  background:#0058a0;
+  background:#1879c8;
   padding:25px 0;
 }
 
@@ -202,10 +229,6 @@ footer a{
   text-align: left;  
 }
 
-.portfolioText{
-  text-align: left;
-}
-
 .projects {
   display:flex;
   flex-direction: row;
@@ -228,7 +251,7 @@ footer a{
   text-transform: uppercase;
   padding-top:65px;
   padding-bottom:96px;
-  transition:0.2s ease-in
+    transition:0.2s ease-in
 }
 .projectImgCaption:hover{
   background:rgb(0,0,0,0.2);
@@ -238,29 +261,100 @@ footer a{
   max-width:400px;
   margin-bottom:35px;
 }
-
-.individualProjectIMG{
-  margin-left:32px;
-}
 .individualProjectIMG img{
-  margin-bottom:25px;
-  max-width:700px;
+  margin-bottom:25px
 }
-#tags{
-  margin:30px 0;
+
+/* resume section */
+.resumeH1{
+  margin-top:25px;
+text-align: center;
 }
-.tagButtons{
-  margin:0 15px;
+.resumeSection.firstSection{
+  margin-top:65px;
 }
-.firstBtn{
-  margin-left:0;
+.resumeSection{
+  background:#04508f;  
+  line-height:2;
+  padding:10px 25px;
+  margin-bottom:45px;
+  box-shadow:11px 1px 21px 1px #000;
 }
-#tagText{
+
+.companyName{
+  font-size:17px;
+  font-weight:600
+}
+
+.date{
   color:#fff;
-  font-size:19px;
-  margin-bottom:10px
+  font-size:17px;
+  text-transform: uppercase;
 }
-.goBackBtn{
-  margin-right:10px;
-  margin-bottom:15px;
+
+.jobTitle{
+  color:#d994f9;
+  font-size:41px;
+  font-weight:700
+}
+
+.jobDescription{
+  color:#ffffff;
+}
+
+.skillSection{
+  text-transform: capitalize;
+  font-weight: 600;
+}
+.hamburger-open, #mobileMenu{
+  display: none!important;
+}
+
+@media screen and (max-width:821px){
+  #skillColSection{
+    flex-direction: column!important;
+  }
+
+  .skillCol{
+    margin-top:30px
+  }  
+}
+@media screen and (max-width:749px){
+  .hamburger{
+
+  }
+  #rightHeader{
+    justify-content: end!important;    
+  }
+  #desktopNav{
+    display: none !important;
+  }
+  #mobileMenu.show{
+    display: flex !important;
+    flex-direction: column!important;
+    line-height: 2;
+  }
+
+  #mobileMenu ul li a{
+    display:flex;
+    width:100%;
+    padding:10px 0
+  }
+
+  .hamburger-close, .hamburger-open{
+    display: flex !important;;
+    background:none;
+    border:none;
+    font-size:25px;
+    color:#fff;
+    margin-right:15px;
+
+  }
+  .hamburger-close{
+    background:#1879c8;
+    position: absolute;
+    top:45px;
+    right:0px;
+    font-size:25px;
+  }
 }
